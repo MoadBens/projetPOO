@@ -12,5 +12,5 @@ public:
 
 
 private:
-	string date_expiration_;
+	std::time_t date_expiration_;
 };

@@ -1,17 +1,18 @@
 #pragma once
 #include "Stock.h"
 #include <string>
+#include <chrono>
 
 using namespace std;
 
 class Materiel : public Stock
 {
 public:
-	Materiel(int quantite, int limite, int ID);
+	Materiel(int quantite, int limite, int ID, std::time_t duree_de_vie, std::time_t duree_de_garantie);
 
 
 private:
-	string duree_de_vie_;
-	string duree_de_garantie_;
+	std::time_t duree_de_vie_;
+	std::time_t duree_de_garantie_;
 };
 
