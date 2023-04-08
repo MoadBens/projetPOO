@@ -3,6 +3,7 @@
 class Personnel
 {
 public :
+	Personnel();
 	Personnel(int ID, std::string nom, std::string prenom);
 	
 private :

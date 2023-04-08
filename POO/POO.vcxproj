@@ -127,19 +127,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Admin.cpp" />
+    <ClCompile Include="Materiel.cpp" />
     <ClCompile Include="Medicament.cpp" />
     <ClCompile Include="Patient.cpp" />
     <ClCompile Include="Personnel.cpp" />
     <ClCompile Include="POO.cpp" />
     <ClCompile Include="Salle.cpp" />
     <ClCompile Include="Stock.cpp" />
+    <ClCompile Include="Technicien.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Admin.h" />
+    <ClInclude Include="Materiel.h" />
     <ClInclude Include="Medicament.h" />
     <ClInclude Include="Patient.h" />
     <ClInclude Include="Personnel.h" />
     <ClInclude Include="Salle.h" />
     <ClInclude Include="Stock.h" />
+    <ClInclude Include="Technicien.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
