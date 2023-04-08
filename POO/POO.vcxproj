@@ -130,6 +130,7 @@
     <ClCompile Include="Admin.cpp" />
     <ClCompile Include="Materiel.cpp" />
     <ClCompile Include="Medicament.cpp" />
+    <ClCompile Include="Operation.cpp" />
     <ClCompile Include="Patient.cpp" />
     <ClCompile Include="Personnel.cpp" />
     <ClCompile Include="POO.cpp" />
@@ -141,6 +142,7 @@
     <ClInclude Include="Admin.h" />
     <ClInclude Include="Materiel.h" />
     <ClInclude Include="Medicament.h" />
+    <ClInclude Include="Operation.h" />
     <ClInclude Include="Patient.h" />
     <ClInclude Include="Personnel.h" />
     <ClInclude Include="Salle.h" />
