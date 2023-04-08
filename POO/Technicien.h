@@ -6,8 +6,8 @@ class Technicien : public Personnel
 public:
 	Technicien(int ID, std::string nom, std::string prenom);
 
-	void ModifierStock(Stock* Stock);
-	void AjouterItem(Stock* Stock);
+	void ModifierStock(Stock* Stock,int quantite);
+	void AjouterItem(Stock* Stock,int quantite);
 private:
 
 

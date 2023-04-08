@@ -9,4 +9,12 @@ Personnel::Personnel(int ID, string nom, string prenom)
 	prenom_ = prenom;
 	ID_ = ID;
 }
+int Personnel::get_ID() { return ID_; }
+std::string Personnel::get_nom() { return nom_; }
+std::string Personnel::get_prenom() { return prenom_; }
+int Personnel::get_niveau() { return niveau_acces_; }
 
+void Personnel::set_ID(int ID) { ID_ = ID; }
+void Personnel::set_nom(string nom) { nom_ = nom; }
+void Personnel::set_prenom(string prenom) { prenom_ = prenom; }
+void Personnel::set_niveau(int niveau) { niveau_acces_ = niveau; }
