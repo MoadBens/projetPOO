@@ -127,9 +127,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\source\repos\projetPOO\POO\ChefDeBloc.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\source\repos\projetPOO\POO\Operation.cpp" />
+    <ClCompile Include="ChefDeBloc.cpp" />
     <ClCompile Include="Medicament.cpp" />
+    <ClCompile Include="Operation.cpp" />
     <ClCompile Include="Patient.cpp" />
     <ClCompile Include="Personnel.cpp" />
     <ClCompile Include="POO.cpp" />
@@ -137,9 +137,9 @@
     <ClCompile Include="Stock.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\..\source\repos\projetPOO\POO\ChefDeBloc.h" />
-    <ClInclude Include="..\..\..\..\..\..\source\repos\projetPOO\POO\Operation.h" />
+    <ClInclude Include="ChefDeBloc.h" />
     <ClInclude Include="Medicament.h" />
+    <ClInclude Include="Operation.h" />
     <ClInclude Include="Patient.h" />
     <ClInclude Include="Personnel.h" />
     <ClInclude Include="Salle.h" />
