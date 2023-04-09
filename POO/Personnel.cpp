@@ -2,8 +2,8 @@
 #include<string>
 
 using namespace std;
-
-Personnel::Personnel(int ID, string nom, string prenom,std::string mdp)
+Personnel::Personnel() {}
+Personnel::Personnel(int ID, string nom, string prenom,string mdp)
 {
 	nom_ = nom;
 	prenom_ = prenom;
@@ -20,3 +20,4 @@ void Personnel::set_ID(int ID) { ID_ = ID; }
 void Personnel::set_nom(string nom) { nom_ = nom; }
 void Personnel::set_prenom(string prenom) { prenom_ = prenom; }
 void Personnel::set_niveau(int niveau) { niveau_acces_ = niveau; }
+void Personnel::set_mdp(string mdp) { mdp_ = mdp; }

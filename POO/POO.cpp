@@ -25,3 +25,33 @@ int main()
     
     
 }
+
+int main(int argc, char** argv)
+{
+    sqlite3* DB;
+    char* messaggeError;
+    int exit = sqlite3_open("example.db", &DB);
+    string query = "SELECT * FROM Connexion;";
+
+    cout << "STATE OF TABLE BEFORE INSERT" << endl;
+
+    sqlite3_exec(DB, query.c_str(), callback, NULL, NULL);
+
+    string sql("INSERT INTO Connexion VALUES(4, 'momo', 'GATES', 30, 'PALO ALTO');");
+
+    exit = sqlite3_exec(DB, sql.c_str(), NULL, 0, &messaggeError);
+    if (exit != SQLITE_OK) {
+        std::cerr << "Error Insert" << std::endl;
+        sqlite3_free(messaggeError);
+    }
+    else
+        std::cout << "Records created Successfully!" << std::endl;
+
+    cout << "STATE OF TABLE AFTER INSERT" << endl;
+
+    sqlite3_exec(DB, query.c_str(), callback, NULL, NULL);
+
+    sqlite3_close(DB);
+    return (0);
+}
+
