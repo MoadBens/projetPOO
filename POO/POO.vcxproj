@@ -70,6 +70,9 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\sqlite;$(IncludePath)</IncludePath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -135,6 +138,7 @@
     <ClCompile Include="Personnel.cpp" />
     <ClCompile Include="POO.cpp" />
     <ClCompile Include="Salle.cpp" />
+    <ClCompile Include="sqlite3.c" />
     <ClCompile Include="Stock.cpp" />
     <ClCompile Include="SystemeAuthentification.cpp" />
     <ClCompile Include="Technicien.cpp" />
@@ -147,6 +151,7 @@
     <ClInclude Include="Patient.h" />
     <ClInclude Include="Personnel.h" />
     <ClInclude Include="Salle.h" />
+    <ClInclude Include="sqlite3.h" />
     <ClInclude Include="Stock.h" />
     <ClInclude Include="SystemeAuthentification.h" />
     <ClInclude Include="Technicien.h" />
