@@ -9,7 +9,7 @@ class SystemeAuthentification
 {
 public :
 	SystemeAuthentification(string bd);
-	vector<Personnel> FetchUsers();
+	vector<Personnel*> FetchUsers();
 	bool VerifierConnexion(Personnel* personne,string mdp);
 private :
 	string bd_;

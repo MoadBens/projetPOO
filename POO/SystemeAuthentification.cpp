@@ -7,12 +7,12 @@ SystemeAuthentification::SystemeAuthentification(string bd)
 	bd_ = bd;
 };
 
-/*vector<Personnel> SystemeAuthentification::FetchUsers()
+vector<Personnel*> SystemeAuthentification::FetchUsers()
 {
 	std::vector<Personnel> people;
 	//CONNEXION AU FICHIER DE LA BDD
 	sqlite3* db;
-	int rc = sqlite3_open("test.db", &db);
+	int rc = sqlite3_open("example.db", &db);
 	if (rc) {
 		std::cerr << "Error opening database: " << sqlite3_errmsg(db) << std::endl;
 	}
@@ -25,7 +25,7 @@ SystemeAuthentification::SystemeAuthentification(string bd)
 		sqlite3_close(db);
 	}
 
-	std::vector<Personnel> personnel;
+	std::vector<Personnel*> personnel;
 	while (sqlite3_step(stmt) == SQLITE_ROW) {
 		Personnel* p = new Personnel();
 		p->set_ID(sqlite3_column_int(stmt, 0));
@@ -36,12 +36,10 @@ SystemeAuthentification::SystemeAuthentification(string bd)
 		personnel.push_back(p);
 	}
 
-	}
-
 	sqlite3_finalize(stmt);
 	sqlite3_close(db);
 	return personnel;
-};*/
+};
 bool SystemeAuthentification::VerifierConnexion(Personnel* personne, string mdp)
 {
 	bool Verification = false;
