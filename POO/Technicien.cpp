@@ -4,10 +4,10 @@ Technicien::Technicien(int ID, std::string nom, std::string prenom) : Personnel(
     // initialisation des attributs spécifiques au technicien
 }
 
-void Technicien::ModifierStock() {
+void Technicien::ModifierStock(Stock* Stock) {
     // implémentation de la méthode ModifierStock
 }
 
-void Technicien::AjouterItem() {
+void Technicien::AjouterItem(Stock* Stock) {
     // implémentation de la méthode AjouterItem
 }
