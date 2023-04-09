@@ -4,7 +4,7 @@
 class Technicien : public Personnel
 {
 public:
-	Technicien(int ID, std::string nom, std::string prenom);
+	Technicien(int ID, std::string nom, std::string prenom,std::string mdp);
 
 	void ModifierStock(Stock* Stock,int quantite);
 	void AjouterItem(Stock* Stock,int quantite);
