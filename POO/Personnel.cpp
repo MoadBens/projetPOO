@@ -3,7 +3,7 @@
 
 using namespace std;
 
-Personnel::Personnel(int ID, string nom, string prenom,string mdp)
+Personnel::Personnel(int ID, string nom, string prenom,std::string mdp)
 {
 	nom_ = nom;
 	prenom_ = prenom;

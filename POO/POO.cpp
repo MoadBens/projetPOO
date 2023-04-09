@@ -19,7 +19,8 @@ int main()
     Patient* patient = new Patient(1,nom,prenom);
     
     std::string commentaire = "commentaire";
-    ChefBloc* Chefbloc1 = new ChefBloc(ID,nom,prenom);
+    std::string mdp = "Moad";
+    ChefBloc* Chefbloc1 = new ChefBloc(ID,nom,prenom,mdp);
     Operation operation = Chefbloc1->creerOperation(listeEmploye, salle, date, duree, heureDebut, patient, commentaire);
     
     
