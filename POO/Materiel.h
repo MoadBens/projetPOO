@@ -8,11 +8,15 @@ using namespace std;
 class Materiel : public Stock
 {
 public:
-	Materiel(int quantite, int limite, int ID, std::time_t duree_de_vie, std::time_t duree_de_garantie);
-
-
+	Materiel();
+	Materiel(int quantite, std::string nom, int limite, int ID);
+	string get_duree_de_vie();
+	string get_duree_de_garantie();
+	void set_duree_de_vie(string duree_de_vie);
+	void set_duree_de_garantie(string duree_de_garantie);
 private:
-	std::time_t duree_de_vie_;
-	std::time_t duree_de_garantie_;
+	string duree_de_vie_;
+	string duree_de_garantie_;
+	
 };
 

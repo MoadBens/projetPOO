@@ -8,9 +8,10 @@ using namespace std;
 class Medicament: public Stock
 {
 public:
-	Medicament(int quantite, int limite, int ID);
-
-
+	Medicament();
+	Medicament(int quantite, std::string nom, int limite, int ID);
+	string get_date_expiration();
+	void set_date_expiration(string date_expiration);
 private:
-	std::time_t date_expiration_;
+	string date_expiration_;
 };
