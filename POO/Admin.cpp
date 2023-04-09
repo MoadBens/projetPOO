@@ -1,7 +1,7 @@
 #include "Admin.h"
 #include "Technicien.h"
 
-Admin::Admin(int ID, std::string nom, std::string prenom) : Personnel(ID, nom, prenom) {
+Admin::Admin(int ID, std::string nom, std::string prenom,std::string mdp) : Personnel(ID, nom, prenom,mdp) {
     // initialisation des attributs spécifiques au technicien
 }
 

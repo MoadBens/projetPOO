@@ -1,6 +1,6 @@
 #include "Technicien.h"
 
-Technicien::Technicien(int ID, std::string nom, std::string prenom) : Personnel(ID, nom, prenom) {
+Technicien::Technicien(int ID, std::string nom, std::string prenom,std::string mdp) : Personnel(ID, nom, prenom,mdp) {
     // initialisation des attributs spécifiques au technicien
 }
 
