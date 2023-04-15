@@ -2,10 +2,31 @@
 #include "Technicien.h"
 #include "sqlite3.h"
 #include "iostream"
+#include "Admin.h"
 
-Admin::Admin(int ID, std::string nom, std::string prenom,std::string mdp) : Personnel(ID, nom, prenom,mdp) {
-    // initialisation des attributs spécifiques à l'administrateur
+Admin* Admin::instance = nullptr;
+
+Admin::Admin(std::string name) : name(name) {} // constructor is defined here
+
+Admin* Admin::getInstance() {
+    if (!instance) {
+        instance = new Admin("Default name");
+    }
+    return instance;
 }
+
+void Admin::setName(std::string name) {
+    this->name = name;
+}
+
+std::string Admin::getName() {
+    return name;
+}
+
+
+/*Admin::Admin(int ID, std::string nom, std::string prenom, std::string mdp) : Personnel(ID, nom, prenom, mdp) {
+    // initialisation des attributs spécifiques à l'administrateur
+}*/
 
 /*void Admin::AjouterUtilisateur(std::string nom, std::string prenom, int niveau, std::string mdp) {
 	
@@ -114,4 +135,11 @@ void Admin::SupprimerUtilisateur(std::string nom,std::string prenom) {
     }
     sqlite3_finalize(stmt);
     sqlite3_close(db);
+}
+
+Admin::~Admin()
+{
+    // Destruction de l'instance unique
+    delete instance;
+    instance = nullptr;
 }
