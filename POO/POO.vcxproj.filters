@@ -33,13 +33,10 @@
     <ClCompile Include="Medicament.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="Technicien.cpp">
+    <ClCompile Include="Operation.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="Admin.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="Materiel.cpp">
+    <ClCompile Include="ChefDeBloc.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="Operation.cpp">
@@ -68,13 +65,10 @@
     <ClInclude Include="Medicament.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="Technicien.h">
+    <ClInclude Include="Operation.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="Admin.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="Materiel.h">
+    <ClInclude Include="ChefDeBloc.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="Operation.h">
