@@ -1,4 +1,7 @@
-﻿  Materiel.cpp
+﻿  Admin.cpp
+C:\Users\Lenovo T470\Dropbox\Mon PC (DESKTOP-44TECH7)\Documents\GitHub\projetPOO\POO\Medicament.h(9,1): error C2504: 'Stock' : classe de base non définie
+C:\Users\Lenovo T470\Dropbox\Mon PC (DESKTOP-44TECH7)\Documents\GitHub\projetPOO\POO\Materiel.h(9,1): error C2504: 'Stock' : classe de base non définie
+  Materiel.cpp
 C:\Users\Lenovo T470\Dropbox\Mon PC (DESKTOP-44TECH7)\Documents\GitHub\projetPOO\POO\Medicament.h(9,1): error C2504: 'Stock' : classe de base non définie
 C:\Users\Lenovo T470\Dropbox\Mon PC (DESKTOP-44TECH7)\Documents\GitHub\projetPOO\POO\Stock.h(12,9): error C2065: 'Materiel' : identificateur non déclaré
 C:\Users\Lenovo T470\Dropbox\Mon PC (DESKTOP-44TECH7)\Documents\GitHub\projetPOO\POO\Stock.h(12,18): error C2059: erreur de syntaxe : '>'
@@ -30,7 +33,6 @@ C:\Users\Lenovo T470\Dropbox\Mon PC (DESKTOP-44TECH7)\Documents\GitHub\projetPOO
 C:\Users\Lenovo T470\Dropbox\Mon PC (DESKTOP-44TECH7)\Documents\GitHub\projetPOO\POO\Materiel.h(8): message : voir la déclaration de 'Materiel'
 C:\Users\Lenovo T470\Dropbox\Mon PC (DESKTOP-44TECH7)\Documents\GitHub\projetPOO\POO\Stock.cpp(102,7): error C2039: 'set_quantite' n'est pas membre de 'Materiel'
 C:\Users\Lenovo T470\Dropbox\Mon PC (DESKTOP-44TECH7)\Documents\GitHub\projetPOO\POO\Materiel.h(8): message : voir la déclaration de 'Materiel'
-  SystemeAuthentification.cpp
   Technicien.cpp
 C:\Users\Lenovo T470\Dropbox\Mon PC (DESKTOP-44TECH7)\Documents\GitHub\projetPOO\POO\Medicament.h(9,1): error C2504: 'Stock' : classe de base non définie
 C:\Users\Lenovo T470\Dropbox\Mon PC (DESKTOP-44TECH7)\Documents\GitHub\projetPOO\POO\Materiel.h(9,1): error C2504: 'Stock' : classe de base non définie

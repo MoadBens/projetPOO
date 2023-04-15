@@ -15,6 +15,7 @@
 using namespace std;
 int main()
 {
+    /*
     std::string prenom = "Mehdi";
     std::string nom = "Yahyaoui";
     int ID = 1;
@@ -31,6 +32,8 @@ int main()
     std::string mdp = "Moad";
     ChefBloc* Chefbloc1 = new ChefBloc(ID,nom,prenom,mdp);
     Operation operation = Chefbloc1->creerOperation(listeEmploye, salle, date, duree, heureDebut, patient, commentaire);
+    */
+    return 0;
     
     
 }
