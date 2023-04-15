@@ -2,12 +2,15 @@
 #include "Personnel.h"
 #include "Materiel.h"
 #include "Medicament.h"
+#include "Patient.h"
 #include "Stock.h"
 #include "Admin.h"
+#include "ChefBloc.h"
 #include "Technicien.h"
 #include "Salle.h"
 #include "SystemeAuthentification.h"
 #include <vector>
+#include <iostream>
 
 using namespace std;
 int main()
