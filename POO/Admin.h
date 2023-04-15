@@ -5,7 +5,7 @@ class Admin : public Personnel
 public:
 
 	static Admin* getInstance();
-	void setName(std::string name);
+	void setName(std::string nom);
 	std::string getName();
 	void AjouterUtilisateur(std::string nom, std::string prenom,int niveau,std::string mdp );
 	void ModifierUtilisateur(std::string nom,std::string prenom);
@@ -13,9 +13,11 @@ public:
 private:
 
 	static Admin* instance;
-	std::string name;
+	std::string nom_;
+	std::string prenom_;
+	std::string mdp_;
 
-	Admin(std::string name);
+	Admin(std::string nom, std::string prenom, std::string mdp);
 	Admin(const Admin&) = delete;
 	Admin& operator=(const Admin&) = delete;
 	~Admin();
