@@ -18,3 +18,5 @@ private:
 	Patient* Patient_;
 	std::string Commentaire_;
 };
+
+
