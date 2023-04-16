@@ -5,14 +5,9 @@
 class observateur
 {
 public:
-	observateur(
-		bool notification_,
-		Personnel* personnel_);
-	
+	observateur(bool notification_,Personnel* personnel_);
 
 	void mettreAJour();
-	// Getters
-	
 
 	std::vector<std::string> getMessage();
 
