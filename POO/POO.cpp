@@ -8,22 +8,29 @@
 #include "Technicien.h"
 #include "Salle.h"
 #include "SystemeAuthentification.h"
+#include "Notif.h"
+#include "observateur.h"
 #include <vector>
 
 using namespace std;
 
 int main(int argc, char** argv)
 {
-	Admin* ad = new Admin(1,"MOMO","MOMO","test");
 	
+	Admin* admin = Admin::getInstance();
+
 	SystemeAuthentification* a = new SystemeAuthentification("hello");
-	Admin* admin= new Admin(2,"Mohamed","ZAML","KHIKHI");
+
 	admin->AjouterUtilisateur("SEGUIN", "SARA", 2, "97BA");
-	admin->AjouterUtilisateur("Mohamed", "ZAML", 2, "97BA");
-	admin->SupprimerUtilisateur("Mohamed","ZAML");
+	admin->SupprimerUtilisateur("Mohamed", "ZAML");
 	vector<Personnel*> users;
 	users = a->FetchUsers();
-	std::cout << users[0]->get_nom() << std::endl;
+	Personnel* p1 = users[0];
+	observateur* obs = new observateur(false,p1);
+	Notif* noti1 = new Notif("TEST TEST");
+	noti1->setobservateurs(obs);
+	vector<observateur> observers = noti1->getobservateurs();
+	//cout<< observers[0]. <<endl;
 	return 0;
 }
 

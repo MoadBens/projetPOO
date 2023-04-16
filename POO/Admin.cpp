@@ -2,31 +2,27 @@
 #include "Technicien.h"
 #include "sqlite3.h"
 #include "iostream"
+#include "Admin.h"
 
-Admin::Admin(int ID, std::string nom, std::string prenom,std::string mdp) : Personnel(ID, nom, prenom,mdp) {
-    // initialisation des attributs spécifiques à l'administrateur
+Admin* Admin::instance = nullptr;
+
+Admin::Admin(std::string nom, std::string prenom, std::string mdp) : nom_(nom),prenom_(prenom),mdp_(mdp) {} // constructor is defined here
+
+Admin* Admin::getInstance() {
+    if (!instance) {
+        instance = new Admin("Admin","Admin","Admin");
+    }
+    return instance;
 }
 
-/*void Admin::AjouterUtilisateur(std::string nom, std::string prenom, int niveau, std::string mdp) {
-	
-	//CONNEXION AU FICHIER DE LA BDD
-	sqlite3* db;
-	int rc = sqlite3_open("example.db", &db);
-	if (rc) {
-		std::cerr << "Error opening database: " << sqlite3_errmsg(db) << std::endl;
-	}
+void Admin::setName(std::string nom) {
+    this->nom_ = nom;
+}
 
-	//ENVOI DE LA REQUETE
-	sqlite3_stmt* stmt;
-	std::string sql = "INSERT INTO Connexion (ID, NOM, PRENOM, NIVEAU, MDP) VALUES (8,\""+nom+"\",\""+prenom+"\","+std::to_string(niveau)+",\""+mdp+"\");";
-	std::cout <<sql.c_str() << std::endl;
+std::string Admin::getName() {
+    return nom_;
+}
 
-	rc = sqlite3_prepare_v2(db,sql.c_str(), -1, &stmt, nullptr);
-	if (rc != SQLITE_OK) {
-		std::cerr << "Error preparing SQL statement: " << sqlite3_errmsg(db) << std::endl;
-		sqlite3_close(db);
-	}
-}*/
 void Admin::AjouterUtilisateur(std::string nom, std::string prenom, int niveau, std::string mdp) {
     //CONNEXION AU FICHIER DE LA BDD
     sqlite3* db;
@@ -114,4 +110,11 @@ void Admin::SupprimerUtilisateur(std::string nom,std::string prenom) {
     }
     sqlite3_finalize(stmt);
     sqlite3_close(db);
+}
+
+Admin::~Admin()
+{
+    // Destruction de l'instance unique
+    delete instance;
+    instance = nullptr;
 }
