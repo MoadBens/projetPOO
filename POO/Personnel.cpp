@@ -2,7 +2,11 @@
 #include<string>
 
 using namespace std;
+<<<<<<< HEAD
 Personnel::Personnel() {}
+=======
+
+>>>>>>> parent of 607c0db (fix errors)
 Personnel::Personnel(int ID, string nom, string prenom,string mdp)
 {
 	nom_ = nom;

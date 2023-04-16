@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿  Admin.cpp
   Materiel.cpp
   Medicament.cpp
@@ -12,4 +13,8 @@ C:\Users\Lenovo T470\Dropbox\Mon PC (DESKTOP-44TECH7)\Documents\GitHub\projetPOO
   Stock.cpp
   SystemeAuthentification.cpp
   Technicien.cpp
+=======
+﻿  ChefBloc.cpp
+  POO.cpp
+>>>>>>> parent of 607c0db (fix errors)
   Génération de code en cours...

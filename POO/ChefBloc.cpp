@@ -1,6 +1,6 @@
 #include "ChefBloc.h"
 
-ChefBloc::ChefBloc(int ID, std::string nom, std::string prenom, std::string mdp) : Personnel(ID, nom, prenom, mdp) {
+ChefBloc::ChefBloc(int ID, std::string nom, std::string prenom) : Personnel(ID, nom, prenom) {
     // initialisation des attributs spécifiques au chef de bloc
 }
 
