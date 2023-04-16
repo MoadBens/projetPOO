@@ -8,12 +8,12 @@ class Notif
 public :
 	Notif(std::string message);
 	std::string getMessage();
-	std::vector<observateur> getobservateurs();
+	std::vector<observateur*> getobservateurs();
 	void setMessage(std::string message);
 	void setobservateurs(observateur* observateur);
 private :
 	std::string message_;
-	std::vector <observateur> observateurs_;
+	std::vector <observateur*> observateurs_;
 
 
 };

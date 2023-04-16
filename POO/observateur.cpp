@@ -1,5 +1,6 @@
 #include "observateur.h"
 
+observateur::observateur(bool notif, Personnel* personnel) : notification_(notif), personnel_(personnel) {};
 // Getters
 
 

@@ -29,8 +29,9 @@ int main(int argc, char** argv)
 	observateur* obs = new observateur(false,p1);
 	Notif* noti1 = new Notif("TEST TEST");
 	noti1->setobservateurs(obs);
-	vector<observateur> observers = noti1->getobservateurs();
+	vector<observateur*> observers = noti1->getobservateurs();
 	//cout<< observers[0]. <<endl;
+	
 	return 0;
 }
 
