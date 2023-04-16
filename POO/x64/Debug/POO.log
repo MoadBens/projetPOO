@@ -1,5 +1,15 @@
-﻿  POO.cpp
-  Salle.cpp
+﻿  Admin.cpp
+  Materiel.cpp
+  Medicament.cpp
+  POO.cpp
+C:\Users\Lenovo T470\Dropbox\Mon PC (DESKTOP-44TECH7)\Documents\GitHub\projetPOO\POO\POO.cpp(25,5): error C2065: 'Patient' : identificateur non déclaré
+C:\Users\Lenovo T470\Dropbox\Mon PC (DESKTOP-44TECH7)\Documents\GitHub\projetPOO\POO\POO.cpp(25,14): error C2065: 'patient' : identificateur non déclaré
+C:\Users\Lenovo T470\Dropbox\Mon PC (DESKTOP-44TECH7)\Documents\GitHub\projetPOO\POO\POO.cpp(25,28): error C2061: erreur de syntaxe : identificateur 'Patient'
+C:\Users\Lenovo T470\Dropbox\Mon PC (DESKTOP-44TECH7)\Documents\GitHub\projetPOO\POO\POO.cpp(29,5): error C2065: 'ChefBloc' : identificateur non déclaré
+C:\Users\Lenovo T470\Dropbox\Mon PC (DESKTOP-44TECH7)\Documents\GitHub\projetPOO\POO\POO.cpp(29,15): error C2065: 'Chefbloc1' : identificateur non déclaré
+C:\Users\Lenovo T470\Dropbox\Mon PC (DESKTOP-44TECH7)\Documents\GitHub\projetPOO\POO\POO.cpp(29,31): error C2061: erreur de syntaxe : identificateur 'ChefBloc'
+C:\Users\Lenovo T470\Dropbox\Mon PC (DESKTOP-44TECH7)\Documents\GitHub\projetPOO\POO\POO.cpp(30,5): error C2065: 'Operation' : identificateur non déclaré
+  Stock.cpp
+  SystemeAuthentification.cpp
   Technicien.cpp
   Génération de code en cours...
-  POO.vcxproj -> C:\Users\Lenovo T470\Dropbox\Mon PC (DESKTOP-44TECH7)\Documents\GitHub\projetPOO\POO\x64\Debug\POO.exe
