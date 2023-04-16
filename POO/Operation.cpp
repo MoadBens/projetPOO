@@ -11,3 +11,16 @@ Operation::Operation(std::vector<std::string> Liste_Employe, Salle* Salle, std::
 	Patient_ = Patient;
 	Commentaire_ = Commentaire;
 }
+Salle* Operation::getSalle() {
+	return Salle_;
+}
+float Operation::getDuree() {
+	return Duree_;
+}
+float Operation::getHeureDebut() {
+	return HeureDebut_;
+}
+Patient* Operation::getPatient() {
+	return Patient_;
+}
+

@@ -131,6 +131,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Admin.cpp" />
+    <ClCompile Include="ChefBloc.cpp" />
     <ClCompile Include="Materiel.cpp" />
     <ClCompile Include="Medicament.cpp" />
     <ClCompile Include="Notif.cpp" />
@@ -147,6 +148,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Admin.h" />
+    <ClInclude Include="ChefBloc.h" />
     <ClInclude Include="Materiel.h" />
     <ClInclude Include="Medicament.h" />
     <ClInclude Include="Notif.h" />

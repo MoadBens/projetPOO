@@ -8,10 +8,14 @@ class Operation
 {
 public:
 	Operation(std::vector<std::string> Liste_Employe, Salle* Salle, std::chrono::system_clock::time_point date, float Duree, float HeureDebut, Patient* Patient, std::string Commentaire);
-
+	Salle* getSalle();
+	float getDuree();
+	float getHeureDebut();
+	Patient* getPatient();
 private:
 	std::vector<std::string> Liste_Employe_;
 	Salle* Salle_;
+	
 	std::chrono::system_clock::time_point date_;
 	float Duree_;
 	float HeureDebut_;
