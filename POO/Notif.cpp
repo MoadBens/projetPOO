@@ -4,7 +4,7 @@ Notif::Notif(std::string message) { message_ = message; };
 std::string Notif::getMessage()  {
 	return message_;
 };
-std::vector<observateur> Notif::getobservateurs()  {
+std::vector<observateur*> Notif::getobservateurs()  {
 	return observateurs_;
 };
 void  Notif::setMessage(std::string message)  {

@@ -6,8 +6,8 @@ public :
 	Personnel();
 	Personnel(int ID, std::string nom, std::string prenom,std::string mdp);
 	int get_ID();
-	std::string get_nom();
-	std::string get_prenom();
+	std::string get_nom  ();
+	std::string get_prenom  ();
 	int get_niveau();
 	std::string get_mdp();
 	void set_ID(int ID);

@@ -17,9 +17,10 @@ using namespace std;
 int main(int argc, char** argv)
 {
 	
+	
 	Admin* admin = Admin::getInstance();
 
-	SystemeAuthentification* a = new SystemeAuthentification("hello");
+	SystemeAuthentification* a = new SystemeAuthentification( );
 
 	admin->AjouterUtilisateur("SEGUIN", "SARA", 2, "97BA");
 	admin->SupprimerUtilisateur("Mohamed", "ZAML");
@@ -29,7 +30,7 @@ int main(int argc, char** argv)
 	observateur* obs = new observateur(false,p1);
 	Notif* noti1 = new Notif("TEST TEST");
 	noti1->setobservateurs(obs);
-	vector<observateur> observers = noti1->getobservateurs();
+	vector<observateur*> observers = noti1->getobservateurs();
 	//cout<< observers[0]. <<endl;
 	return 0;
 }
