@@ -72,3 +72,93 @@ vector<Medicament*> Medicament::FetchMateriel()
     sqlite3_close(db);
     return medicament;
 };
+
+void Medicament::AjouterMedicament(int quantite, int limite, int ID, string date_expiration) {
+    //CONNEXION AU FICHIER DE LA BDD
+    sqlite3* db;
+    int rc = sqlite3_open("example.db", &db);
+    if (rc) {
+        std::cerr << "Error opening database: " << sqlite3_errmsg(db) << std::endl;
+        return;
+    }
+
+    //ENVOI DE LA REQUETE
+    sqlite3_stmt* stmt;
+    std::string sql = "INSERT INTO Medicament (ID, Limite, Quantite, DateExpiration) VALUES ('" + to_string(ID) + "','" + to_string(limite) + "'," + to_string(quantite) + ",'" + date_expiration + "')";
+    rc = sqlite3_prepare_v2(db, sql.c_str(), -1, &stmt, nullptr);
+    if (rc != SQLITE_OK) {
+        std::cerr << "Error preparing SQL statement: " << sqlite3_errmsg(db) << std::endl;
+        sqlite3_finalize(stmt);
+        sqlite3_close(db);
+        return;
+    }
+    rc = sqlite3_step(stmt);
+    if (rc != SQLITE_DONE) {
+        std::cerr << "Error executing SQL statement: " << sqlite3_errmsg(db) << std::endl;
+    }
+    else {
+        std::cout << "Utilisateur ajoute avec succes !" << std::endl;
+    }
+    sqlite3_finalize(stmt);
+    sqlite3_close(db);
+}
+
+void Medicament::ModifierMedicament(int Quantite, std::string date_expiration) {
+    // implémentation de la méthode DeleteItem
+    sqlite3* db;
+    int rc = sqlite3_open("example.db", &db);
+    if (rc) {
+        std::cerr << "Error opening database: " << sqlite3_errmsg(db) << std::endl;
+        return;
+    }
+
+    //ENVOI DE LA REQUETE
+    sqlite3_stmt* stmt;
+    std::string sql = "UPDATE Medicament SET Quantite='" + std::to_string(Quantite) + "',DateExpiration='" + date_expiration + "'WHERE Quantite ='" + std::to_string(Quantite) + "' AND DateExpiration='" + date_expiration + "'";
+    rc = sqlite3_prepare_v2(db, sql.c_str(), -1, &stmt, nullptr);
+    if (rc != SQLITE_OK) {
+        std::cerr << "Error preparing SQL statement: " << sqlite3_errmsg(db) << std::endl;
+        sqlite3_finalize(stmt);
+        sqlite3_close(db);
+        return;
+    }
+    rc = sqlite3_step(stmt);
+    if (rc != SQLITE_DONE) {
+        std::cerr << "Error executing SQL statement: " << sqlite3_errmsg(db) << std::endl;
+    }
+    else {
+        std::cout << "Utilisateur modifie avec succes !" << std::endl;
+    }
+    sqlite3_finalize(stmt);
+    sqlite3_close(db);
+}
+
+void Medicament::SupprimerMedicament(int Quantite, std::string date_expiration) {
+    // implémentation de la méthode DeleteItem
+    sqlite3* db;
+    int rc = sqlite3_open("example.db", &db);
+    if (rc) {
+        std::cerr << "Error opening database: " << sqlite3_errmsg(db) << std::endl;
+        return;
+    }
+
+    //ENVOI DE LA REQUETE
+    sqlite3_stmt* stmt;
+    std::string sql = "DELETE FROM Medicament WHERE Quantite ='" + to_string(Quantite) + "' AND DateExpiration='" + date_expiration + "'";
+    rc = sqlite3_prepare_v2(db, sql.c_str(), -1, &stmt, nullptr);
+    if (rc != SQLITE_OK) {
+        std::cerr << "Error preparing SQL statement: " << sqlite3_errmsg(db) << std::endl;
+        sqlite3_finalize(stmt);
+        sqlite3_close(db);
+        return;
+    }
+    rc = sqlite3_step(stmt);
+    if (rc != SQLITE_DONE) {
+        std::cerr << "Error executing SQL statement: " << sqlite3_errmsg(db) << std::endl;
+    }
+    else {
+        std::cout << "Utilisateur supprime avec succes !" << std::endl;
+    }
+    sqlite3_finalize(stmt);
+    sqlite3_close(db);
+}

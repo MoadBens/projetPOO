@@ -11,6 +11,9 @@ class Medicament: public Stock
 public:
 	Medicament(int quantite, int limite, int ID, string date_expiration);
 	vector<Medicament*> FetchMateriel();
+	void AjouterMedicament(int quantite, int limite, int ID, string date_expiration);
+	void ModifierMedicament(int Quantite, std::string date_expiration);
+	void SupprimerMedicament(int Quantite, std::string date_expiration);
 	int get_quantite();
 	int get_limite();
 	int get_ID();

@@ -2,7 +2,6 @@
 
 observateur::observateur(bool notif, Personnel* personnel) : notification_(notif), personnel_(personnel) {};
 // Getters
-observateur::observateur(bool notif, Personnel* personnel) : notification_(notif), personnel_(personnel) {};
 
 std::vector<std::string> observateur::getMessage()  {
     return messages_;
