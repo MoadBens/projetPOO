@@ -2,13 +2,14 @@
 #include "Stock.h"
 #include <string>
 #include <chrono>
-
+#include <vector>
 using namespace std;
 
 class Materiel : public Stock
 {
 public:
 	Materiel(int quantite, int limite, int ID, string duree_de_vie, string duree_de_garantie);
+	vector<Materiel*> FetchMateriel();
 	int get_quantite();
 	int get_limite();
 	int get_ID();
