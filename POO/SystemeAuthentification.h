@@ -7,11 +7,11 @@ using namespace std;
 
 class SystemeAuthentification
 {
-public :
-	SystemeAuthentification(string bd);
-	vector<Personnel*> FetchUsers();
-	bool VerifierConnexion(Personnel* personne,string mdp);
-private :
-	string bd_;
+public:
+    SystemeAuthentification();
+    vector<Personnel*> FetchUsers();
+    bool VerifierConnexion(std::string nom, std::string prenom, std::string mdp);
+    Personnel* ActualUser(std::string nom, std::string prenom, std::string mdp);
+
 };
 

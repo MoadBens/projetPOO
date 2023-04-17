@@ -140,6 +140,7 @@
     <ClCompile Include="Patient.cpp" />
     <ClCompile Include="Personnel.cpp" />
     <ClCompile Include="POO.cpp" />
+    <ClCompile Include="ProxyStock.cpp" />
     <ClCompile Include="Salle.cpp" />
     <ClCompile Include="sqlite3.c" />
     <ClCompile Include="Stock.cpp" />
@@ -156,11 +157,15 @@
     <ClInclude Include="Operation.h" />
     <ClInclude Include="Patient.h" />
     <ClInclude Include="Personnel.h" />
+    <ClInclude Include="ProxyStock.h" />
     <ClInclude Include="Salle.h" />
     <ClInclude Include="sqlite3.h" />
     <ClInclude Include="Stock.h" />
     <ClInclude Include="SystemeAuthentification.h" />
     <ClInclude Include="Technicien.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

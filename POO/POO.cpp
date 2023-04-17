@@ -20,7 +20,7 @@ int main(int argc, char** argv)
 {
 	/*Admin* admin = Admin::getInstance();
 
-	SystemeAuthentification* a = new SystemeAuthentification("hello");
+	SystemeAuthentification* a = new SystemeAuthentification( );
 
 	admin->AjouterUtilisateur("SEGUIN", "SARA", 2, "97BA");
 	admin->SupprimerUtilisateur("Mohamed", "ZAML");

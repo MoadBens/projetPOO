@@ -11,8 +11,8 @@ Personnel::Personnel(int ID, string nom, string prenom,string mdp)
 	mdp_ = mdp;
 }
 int Personnel::get_ID() { return ID_; }
-std::string Personnel::get_nom() { return nom_; }
-std::string Personnel::get_prenom() { return prenom_; }
+std::string Personnel::get_nom()  { return nom_; }
+std::string Personnel::get_prenom()  { return prenom_; }
 int Personnel::get_niveau() { return niveau_acces_; }
 std::string Personnel::get_mdp() { return mdp_; };
 
