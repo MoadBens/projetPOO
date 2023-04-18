@@ -46,7 +46,7 @@ void Admin::AjouterUtilisateur(std::string nom, std::string prenom, int niveau, 
     if (rc != SQLITE_DONE) {
         std::cerr << "Error executing SQL statement: " << sqlite3_errmsg(db) << std::endl;
     } else {
-        std::cout << "L'utilisateur a été ajouté avec succès !" << std::endl;
+        std::cout << "Utilisateur ajoute avec succes !" << std::endl;
     }
     sqlite3_finalize(stmt);
     sqlite3_close(db);
@@ -77,7 +77,7 @@ void Admin::ModifierUtilisateur(std::string nom,std::string prenom) {
         std::cerr << "Error executing SQL statement: " << sqlite3_errmsg(db) << std::endl;
     }
     else {
-        std::cout << "L'utilisateur a été ajouté avec succès !" << std::endl;
+        std::cout << "Utilisateur modifie avec succes !" << std::endl;
     }
     sqlite3_finalize(stmt);
     sqlite3_close(db);
@@ -106,7 +106,7 @@ void Admin::SupprimerUtilisateur(std::string nom,std::string prenom) {
         std::cerr << "Error executing SQL statement: " << sqlite3_errmsg(db) << std::endl;
     }
     else {
-        std::cout << "L'utilisateur a été ajouté avec succès !" << std::endl;
+        std::cout << "Utilisateur supprime avec succès !" << std::endl;
     }
     sqlite3_finalize(stmt);
     sqlite3_close(db);
